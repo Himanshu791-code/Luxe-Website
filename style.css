@@ -13,11 +13,9 @@ body {
 nav {
     height: 80px;
     padding: 0 70px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -48,7 +46,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 50px 50px;
 }
 
@@ -621,4 +618,157 @@ footer{
 
 .footer-links a:hover{
     color: white;
+}
+
+
+
+
+
+
+@media (max-width: 768px){
+
+    nav{
+        padding: 20px;
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links,
+    .social-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .main{
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .left,
+    .right{
+        width: 100%;
+    }
+
+    .header1 h1{
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .left p{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .but{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .rating{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .image-box{
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .image-box img{
+        width: 200px;
+    }
+
+    .second-page,
+    .featured-section,
+    .footer-section{
+        padding: 60px 20px;
+    }
+
+    .second-page h1,
+    .featured-section h1,
+    .footer-section h1,
+    .sale-left h1{
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .second-page p{
+        width: 100%;
+    }
+
+    .all-cards,
+    .product-container{
+        gap: 20px;
+    }
+
+    .card-box,
+    .product-card{
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .sale-section{
+        margin: 60px 20px;
+        padding: 40px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .sale-left p{
+        width: 100%;
+    }
+
+    .sale-right{
+        margin-right: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .timer-box{
+        width: 90px;
+        height: 90px;
+    }
+
+    .timer-box h2{
+        font-size: 28px;
+    }
+
+    .subscribe-box{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    .subscribe-box input{
+        padding: 20px;
+    }
+
+    .subscribe-box button{
+        width: 100%;
+        height: 60px;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-logo{
+        width: 100%;
+    }
+
+    .footer-links{
+        flex-direction: column;
+        gap: 30px;
+    }
 }
